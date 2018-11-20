@@ -4,8 +4,6 @@ public class ExerciseOne {
 	
 	public static void main(String[] args) {
 		
-		String helloWorld = "Hello World!";
-		System.out.println(helloWorld);
 		printWord("Matt");
 		System.out.println(helloWorldMethod());
 		System.out.println(sumOrMultiply(2, 4, true));
@@ -27,7 +25,8 @@ public class ExerciseOne {
 	}
 	
 	public static String helloWorldMethod() {
-		return "Hello World!";
+		String helloWorld = "Hello World!";
+		return helloWorld;
 	}
 	
 	
