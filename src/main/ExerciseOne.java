@@ -9,16 +9,26 @@ public class ExerciseOne {
 		System.out.println(sumOrMultiply(2, 4, true));
 		System.out.println(sumOrMultiply(0, 4, false));
 		
-		int [] arrayint = new int[10];
-		int j = 0;
-		for (int a = 0; a < arrayint.length; a++) {
-			arrayint[a] = j;
-			j += 5; {
-			System.out.println(sumOrMultiply(arrayint[a], 0, false));
+		int [] arrayint = new int[11];
+		for (int i = 1; i < arrayint.length; i++) {
+			arrayint[i] = i;
+			if (arrayint[i] == arrayint[arrayint.length - 1]) {
+				System.out.println(arrayint[i]);
+			} else 
+				System.out.print(arrayint[i] + ",");
+			}
+		
+		for (int i = 1; i < arrayint.length; i++) {
+			if (arrayint[i] == arrayint[arrayint.length - 1]) {
+				System.out.println(arrayint[i]*10);	
+			} else {
+				System.out.print(arrayint[i]*10 + ",");
 			}
 		}
+			
+		}
 		
-	}
+	
 	
 	public static void printWord(String word) {
 		System.out.println(word);
